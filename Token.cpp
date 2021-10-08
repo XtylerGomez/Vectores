@@ -37,3 +37,11 @@ bool Token::check2D(string x){
     return false;
   }
 }
+
+bool Token::checkPunto(string x){
+  if(x=="-p"||x=="p"||x=="punto"){
+    return true;
+  }else if(x=="-c"||x=="c"||x=="cruz"){
+    return false;
+  }
+}

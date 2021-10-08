@@ -66,6 +66,20 @@ int main(int argc, char* argv[]){
         m.multi(v.vectores(argList[1]), v.getSize(v.vectores(argList[1])));
       }
     }
+    if(argList[0]=="-p"||argList[0]=="p"||argList[0]=="punto") {  
+    if(argc == 2){ 
+        cout << "Formato de Vectores no Aceptado" << endl;
+      }else{
+        m.productos(v.vectores(argList[1]), v.getSize(v.vectores(argList[1])),v.checkPunto(argList[0]));
+      }
+    }
+    if(argList[0]=="-c"||argList[0]=="c"||argList[0]=="cruz") {  
+    if(argc == 2){ 
+        cout << "Formato de Vectores no Aceptado" << endl;
+      }else{
+        m.productos(v.vectores(argList[1]), v.getSize(v.vectores(argList[1])),v.checkPunto(argList[0]));
+      }
+    }
   }
   return 0;
 }
