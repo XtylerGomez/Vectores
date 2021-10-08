@@ -10,5 +10,6 @@ class Token{
     int getSize(string x);
     bool checkResta(string x);
     bool check2D(string x);
+    bool checkPunto(string x);
     };
 #endif
